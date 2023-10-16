@@ -1,0 +1,28 @@
+{
+  "name": "kbs-demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": ".eslintrc.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/leeenx/kbs-demo.git"
+  },
+  "author": "leeenx",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/leeenx/kbs-demo/issues"
+  },
+  "homepage": "https://github.com/leeenx/kbs-demo#readme",
+  "devDependencies": {
+    "@types/wechat-miniprogram": "^3.4.4",
+    "miniprogram-api-typings": "^3.12.0"
+  },
+  "dependencies": {
+    "kb-smart-component": "^0.0.15",
+    "kbs-dsl-loader": "^1.0.3",
+    "kbs-dsl-resolver": "^1.0.13"
+  }
+}

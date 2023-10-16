@@ -1,0 +1,8 @@
+<!--index.wxml-->
+<awesome-element
+  watch="{{watch}}"
+  watchOptions="{{watchOptions}}"
+  dslJson="{{dslJson || null}}"
+  url="{{url || ''}}"
+  dslUrl="{{dslUrl || ''}}"
+/>
