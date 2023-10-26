@@ -1,2 +1,6 @@
 <!--index.wxml-->
-<awesome-element props="{{props || null}}" />
+<awesome-element props="{{props || null}}" bind:load="handleLoad"/>
+<view wx:if="{{loading}}" style="display: flex; width: 100%; height: 100vh; flex-direction: column; justify-content: flex-start; align-items: center;">
+  <image src="/images/loading.gif" style="width: 250px; height: 200px; display: block; margin-top: 40px;" />
+  <view style="font-size: 14px; color: #999; margin-top: -40px;">页面加载中...</view>
+</view>
