@@ -1,7 +1,9 @@
 {
   "pages": [
+    "pages/home/index",
     "pages/kb-headless/index",
-    "pages/kb/index"
+    "pages/kb/index",
+    "pages/inject-component/index"
   ],
   "window": {
     "backgroundTextStyle": "light",

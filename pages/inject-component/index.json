@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "awesome-element": "kb-smart-component"
+  },
+  "navigationBarTitleText": "内嵌外部组件"
+}
