@@ -15,8 +15,8 @@ interface KbsPageOptions extends WechatMiniprogram.Page.DataOption {
 }
 
 interface NavigateConfig {
-  replace: boolean;
-  headless: boolean;
+  replace?: boolean;
+  headless?: boolean;
 }
 
 declare module 'kbs-sdk' {

@@ -3181,10 +3181,11 @@ Component({
             case 0:
               _ref3 = _this2.properties.props, dslJson = _ref3.dslJson, url = _ref3.url, dslUrl = _ref3.dslUrl, watch = _ref3.watch, watchOptions = _ref3.watchOptions;
               if (dslJson) {
-                _context.next = 5;
+                _context.next = 11;
                 break;
               }
-              _context.next = 4;
+              _context.prev = 2;
+              _context.next = 5;
               return external_require_kbs_dsl_loader_default()({
                 url: url || dslUrl || '',
                 fromHtml: Boolean(url),
@@ -3195,9 +3196,15 @@ Component({
                   }
                 })
               });
-            case 4:
-              dslJson = _context.sent;
             case 5:
+              dslJson = _context.sent;
+              _context.next = 11;
+              break;
+            case 8:
+              _context.prev = 8;
+              _context.t0 = _context["catch"](2);
+              _this2.triggerEvent('error');
+            case 11:
               _this2.update(dslJson);
               // @ts-ignore
               _this2.setData({
@@ -3205,11 +3212,11 @@ Component({
               });
               // @ts-ignore
               _this2.triggerEvent('load');
-            case 8:
+            case 14:
             case "end":
               return _context.stop();
           }
-        }, _callee);
+        }, _callee, null, [[2, 8]]);
       }))();
     }
   },

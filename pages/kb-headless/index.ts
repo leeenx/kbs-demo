@@ -3,7 +3,8 @@ import { defaultPageConfig } from "../../utils/common";
 
 KbsPage({
   data: {
-    loading: true
+    loading: true,
+    error: false
   },
   ...defaultPageConfig,
   onShow() {
@@ -11,5 +12,8 @@ KbsPage({
   },
   handleLoad() {
     this.setData({ loading: false });
+  },
+  handleError() {
+    this.setData({ loading: false, error: true });
   }
 });
