@@ -11,7 +11,7 @@ Page({
   onLoad() {
     this.setData({
       props: {
-        url: getDslUrl('little-component')
+        url: getDslUrl('/little-component/')
       }
     });
   }
