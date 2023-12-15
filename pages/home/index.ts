@@ -4,6 +4,9 @@ import resolve from 'kbs-dsl-resolver';
 import { getDslUrl } from 'kbs-sdk';
 
 Page({
+  gotoEchartsDemo() {
+    wx.navigateTo({ url: '/pages/echarts-demo/index' });
+  },
   gotoPageA() {
     navigate('/page-b/', { pageTitle: '外部页面A' });
   },

@@ -9,6 +9,13 @@
         "miniprogram": {
             "list": [
                 {
+                    "name": "echarts演示页",
+                    "pathName": "pages/echarts-demo/index",
+                    "query": "",
+                    "launchMode": "default",
+                    "scene": null
+                },
+                {
                     "name": "",
                     "pathName": "pages/kb/index",
                     "query": "",

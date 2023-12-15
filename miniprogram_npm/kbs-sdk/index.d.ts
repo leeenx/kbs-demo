@@ -19,6 +19,11 @@ interface NavigateConfig {
   headless?: boolean;
 }
 
+interface ImportModuleParams {
+  path: string;
+  fromHtml?: boolean;
+}
+
 declare module 'kbs-sdk' {
   export function KbsPage(options: KbsPageOptions): void;
   export function getCurrentPage(): WechatMiniprogram.Page.Instance<WechatMiniprogram.IAnyObject, WechatMiniprogram.IAnyObject>;
@@ -27,4 +32,5 @@ declare module 'kbs-sdk' {
   export function getDslUrl(route: string): string;
   export function createWxMpRoute(route: string, params: any, headless: boolean): string;
   export function navigate(route: string, params: any, config?: NavigateConfig): Promise<void>;
+  export function importModule(params: ImportModuleParams): Promise<any>;
 }
