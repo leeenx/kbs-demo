@@ -9,8 +9,57 @@
         "miniprogram": {
             "list": [
                 {
-                    "name": "echarts演示页",
+                    "name": "主题河流图（同步）",
+                    "pathName": "local-echarts/pages/themeRiver/index",
+                    "query": "",
+                    "launchMode": "default",
+                    "scene": null
+                },
+                {
+                    "name": "主题河流图（异步）",
+                    "pathName": "pages/themeRiver/index",
+                    "query": "",
+                    "launchMode": "default",
+                    "scene": null
+                },
+                {
+                    "name": "echarts演示（同步）",
+                    "pathName": "local-echarts/pages/index/index",
+                    "query": "",
+                    "launchMode": "default",
+                    "scene": null
+                },
+                {
+                    "name": "echarts演示页(异步)",
                     "pathName": "pages/echarts-demo/index",
+                    "query": "",
+                    "launchMode": "default",
+                    "scene": null
+                },
+                {
+                    "name": "本地地图",
+                    "pathName": "local-echarts/pages/map/index",
+                    "query": "",
+                    "launchMode": "default",
+                    "scene": null
+                },
+                {
+                    "name": "本地加载echarts",
+                    "pathName": "local-echarts/pages/bar/index",
+                    "query": "",
+                    "launchMode": "default",
+                    "scene": null
+                },
+                {
+                    "name": "异步地图",
+                    "pathName": "pages/map/index",
+                    "query": "",
+                    "launchMode": "default",
+                    "scene": null
+                },
+                {
+                    "name": "异步加载echarts",
+                    "pathName": "pages/bar/index",
                     "query": "",
                     "launchMode": "default",
                     "scene": null

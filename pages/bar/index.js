@@ -12,7 +12,7 @@ async function initChart(canvas, width, height, dpr) {
   canvas.setChart(chart);
 
   var option = {
-    animation: false,
+    // animation: false,
     tooltip: {
       trigger: 'axis',
       axisPointer: {            // 坐标轴指示器，坐标轴触发有效

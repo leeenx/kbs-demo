@@ -15,6 +15,7 @@ async function initChart(canvas, width, height, dpr) {
   echarts.registerMap('henan', geoJson);
 
   const option = {
+    animation: false,
     tooltip: {
       trigger: 'item',
       formatter: '{b}: {c}'
