@@ -9,72 +9,16 @@
         "miniprogram": {
             "list": [
                 {
-                    "name": "主题河流图（同步）",
-                    "pathName": "local-echarts/pages/themeRiver/index",
-                    "query": "",
+                    "name": "web分包-echarts",
+                    "pathName": "web-package/page/index",
+                    "query": "route=%2Fecharts-demo%2F&pageTitle=demo&pageNameSpace=1726159749803",
                     "launchMode": "default",
                     "scene": null
                 },
                 {
-                    "name": "主题河流图（异步）",
-                    "pathName": "pages/themeRiver/index",
-                    "query": "",
-                    "launchMode": "default",
-                    "scene": null
-                },
-                {
-                    "name": "echarts演示（同步）",
-                    "pathName": "local-echarts/pages/index/index",
-                    "query": "",
-                    "launchMode": "default",
-                    "scene": null
-                },
-                {
-                    "name": "echarts演示页(异步)",
-                    "pathName": "pages/echarts-demo/index",
-                    "query": "",
-                    "launchMode": "default",
-                    "scene": null
-                },
-                {
-                    "name": "本地地图",
-                    "pathName": "local-echarts/pages/map/index",
-                    "query": "",
-                    "launchMode": "default",
-                    "scene": null
-                },
-                {
-                    "name": "本地加载echarts",
-                    "pathName": "local-echarts/pages/bar/index",
-                    "query": "",
-                    "launchMode": "default",
-                    "scene": null
-                },
-                {
-                    "name": "异步地图",
-                    "pathName": "pages/map/index",
-                    "query": "",
-                    "launchMode": "default",
-                    "scene": null
-                },
-                {
-                    "name": "异步加载echarts",
-                    "pathName": "pages/bar/index",
-                    "query": "",
-                    "launchMode": "default",
-                    "scene": null
-                },
-                {
-                    "name": "",
-                    "pathName": "pages/kb/index",
-                    "query": "",
-                    "launchMode": "default",
-                    "scene": null
-                },
-                {
-                    "name": "",
-                    "pathName": "pages/kb-headless/index",
-                    "query": "name=leeenx",
+                    "name": "web分包-echarts-demo-bar",
+                    "pathName": "web-package/page/index",
+                    "query": "route=%2Fecharts-demo%2F&pageTitle=demo&pageNameSpace=1726159749803",
                     "launchMode": "default",
                     "scene": null
                 }

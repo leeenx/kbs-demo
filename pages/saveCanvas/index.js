@@ -1,9 +1,10 @@
-import { importModule } from 'kbs-sdk';
+import { importModule, fromHtml, getDslUrl } from 'kbs-sdk';
 
 let chart = null;
 
 async function initChart(canvas, width, height, dpr) {
-  const echarts = await importModule({ path: '/echarts-sdk/' });
+  const path = await fromHtml(getDslUrl('/echarts-sdk/'));
+  const echarts = await importModule({ path });
   chart = echarts.init(canvas, null, {
     width: width,
     height: height,

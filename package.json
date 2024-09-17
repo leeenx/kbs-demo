@@ -21,9 +21,8 @@
     "miniprogram-api-typings": "^3.12.0"
   },
   "dependencies": {
-    "kb-smart-component": "^0.1.5",
-    "kbs-dsl-loader": "^1.0.8",
-    "kbs-dsl-resolver": "^2.0.1",
-    "kbs-sdk": "^1.0.10"
+    "kbs-dsl-loader": "^1.0.19",
+    "kbs-dsl-resolver": "^2.0.5",
+    "kbs-sdk": "^1.1.2"
   }
 }

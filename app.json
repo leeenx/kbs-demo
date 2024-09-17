@@ -1,9 +1,6 @@
 {
   "pages": [
     "pages/home/index",
-    "pages/kb-headless/index",
-    "pages/kb/index",
-    "pages/inject-component/index",
     "pages/echarts-demo/index",
     "pages/bar/index",
     "pages/measureText/index",
@@ -32,34 +29,14 @@
   ],
   "subpackages": [
     {
-      "root": "local-echarts",
+      "root": "web-package",
+      "name": "web-package",
       "pages": [
-        "pages/index/index",
-        "pages/bar/index",
-        "pages/measureText/index",
-        "pages/line/index",
-        "pages/scatter/index",
-        "pages/sunburst/index",
-        "pages/funnel/index",
-        "pages/radar/index",
-        "pages/gauge/index",
-        "pages/pie/index",
-        "pages/k/index",
-        "pages/heatmap/index",
-        "pages/tree/index",
-        "pages/treemap/index",
-        "pages/map/index",
-        "pages/graph/index",
-        "pages/boxplot/index",
-        "pages/parallel/index",
-        "pages/sankey/index",
-        "pages/themeRiver/index",
-        "pages/lazyLoad/index",
-        "pages/multiCharts/index",
-        "pages/move/index",
-        "pages/saveCanvas/index",
-        "pages/loadImage/index"
-      ]
+        "page/index",
+        "page-headless/index",
+        "inject-component/index"
+      ],
+      "independent": true
     }
   ],
   "window": {

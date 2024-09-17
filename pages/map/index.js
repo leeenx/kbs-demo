@@ -1,17 +1,17 @@
-import { importModule } from 'kbs-sdk';
+import { importModule, fromHtml, getDslUrl } from 'kbs-sdk';
 import geoJson from './mapData.js';
 
 const app = getApp();
 
 async function initChart(canvas, width, height, dpr) {
-  const echarts = await importModule({ path: '/echarts-sdk/' });
+  const path = await fromHtml(getDslUrl('/echarts-sdk/'));
+  const echarts = await importModule({ path });
   const chart = echarts.init(canvas, null, {
     width: width,
     height: height,
     devicePixelRatio: dpr // new
   });
   canvas.setChart(chart);
-
   echarts.registerMap('henan', geoJson);
 
   const option = {
@@ -92,7 +92,11 @@ async function initChart(canvas, width, height, dpr) {
 
   };
 
+  const start = Date.now();
+
   chart.setOption(option);
+
+  console.log('----- 注册耗时', Date.now() - start);
 
   return chart;
 }

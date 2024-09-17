@@ -1,3 +1,5 @@
+import './utils/common';
+
 App({
   globalData: {},
   onLaunch() {

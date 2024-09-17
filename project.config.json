@@ -4,13 +4,24 @@
         "useCompilerPlugins": [
             "typescript"
         ],
+        "ignoreDevUnusedFiles": true,
         "coverView": true,
         "es6": true,
         "postcss": true,
         "minified": true,
         "enhance": true,
         "showShadowRootInWxmlPanel": true,
-        "packNpmRelationList": [],
+        "packNpmManually": true,
+        "packNpmRelationList": [
+            {
+                "packageJsonPath": "./package.json",
+                "miniprogramNpmDistDir": "/"
+            },
+            {
+                "packageJsonPath": "./web-package/package.json",
+                "miniprogramNpmDistDir": "/web-package/"
+            }
+        ],
         "babelSetting": {
             "ignore": [],
             "disablePlugins": [],

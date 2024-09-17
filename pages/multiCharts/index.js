@@ -1,4 +1,4 @@
-import { importModule } from 'kbs-sdk';
+import { importModule, fromHtml, getDslUrl } from 'kbs-sdk';
 
 Page({
   onShareAppMessage: function (res) {
@@ -12,7 +12,8 @@ Page({
   data: {
     ecBar: {
       onInit: async function (canvas, width, height, dpr) {
-        const echarts = await importModule({ path: '/echarts-sdk/' });
+        const path = await fromHtml(getDslUrl('/echarts-sdk/'));
+  const echarts = await importModule({ path });
         const barChart = echarts.init(canvas, null, {
           width: width,
           height: height,
@@ -27,7 +28,8 @@ Page({
 
     ecScatter: {
       onInit: async function (canvas, width, height, dpr) {
-        const echarts = await importModule({ path: '/echarts-sdk/' });
+        const path = await fromHtml(getDslUrl('/echarts-sdk/'));
+  const echarts = await importModule({ path });
         const scatterChart = echarts.init(canvas, null, {
           width: width,
           height: height,

@@ -1,4 +1,4 @@
-import { importModule } from 'kbs-sdk';
+import { importModule, fromHtml, getDslUrl } from 'kbs-sdk';
 
 const app = getApp();
 
@@ -129,7 +129,8 @@ Page({
 
   // 点击按钮后初始化图表
   init: async function () {
-    const echarts = await importModule({ path: '/echarts-sdk/' });
+    const path = await fromHtml(getDslUrl('/echarts-sdk/'));
+  const echarts = await importModule({ path });
     this.ecComponent.init((canvas, width, height, dpr) => {
       // 获取组件的 canvas、width、height 后的回调函数
       // 在这里初始化图表

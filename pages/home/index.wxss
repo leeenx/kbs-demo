@@ -1,1 +1,30 @@
-.kb {}
+.home {
+  position: relative;
+}
+
+.title {
+  font-size: 18px;
+  color: #333;
+  font-weight: bold;
+  margin: 20px 0 20px 24px;
+}
+
+.button {
+  display: block;
+  margin: 0 20px;
+  height: 52px;
+  line-height: 53px;
+  font-size: 17px;
+  box-sizing: border-box;
+  padding-left: 10px;
+  color: #666;
+  border-top: 1px solid #efefef;
+}
+
+.button:empty {
+  height: 0;
+}
+
+.button:last-child {
+  border-bottom: 1px solid #efefef;
+}

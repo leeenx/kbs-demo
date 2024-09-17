@@ -1,11 +1,11 @@
-import { navigate } from "kbs-sdk";
-import load from 'kbs-dsl-loader';
-import resolve from 'kbs-dsl-resolver';
-import { getDslUrl } from 'kbs-sdk';
+import { navigate, getDslUrl, importModule, fromHtml } from "kbs-sdk";
 
 Page({
   gotoEchartsDemo() {
     wx.navigateTo({ url: '/pages/echarts-demo/index' });
+  },
+  gotoDemo() {
+    navigate('/echarts-demo/', { pageTitle: 'demo' });
   },
   gotoPageA() {
     navigate('/page-b/', { pageTitle: '外部页面A' });
@@ -14,14 +14,14 @@ Page({
     navigate('/page-a/', { pageTitle: '外部页面B' }, { headless: true });
   },
   gotoInjectComponent() {
-    wx.navigateTo({ url: '/pages/inject-component/index' });
+    wx.navigateTo({ url: '/web-package/inject-component/index' });
   },
   async loadSdk() {
-    // @ts-ignore
-    const sdk = await load({
-      url: getDslUrl('/sdk/'),
-      fromHtml: true
-    });
-    resolve(sdk).default();
+    /**
+     * 通过 fromHtml 可以提取到 url
+     */
+    const path = await fromHtml(getDslUrl('/sdk/'));
+    const { default: sdk } = await importModule({ path });
+    sdk();
   }
 });

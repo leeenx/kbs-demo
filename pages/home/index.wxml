@@ -1,18 +1,24 @@
 <!--index.wxml-->
-<view style="display: flex; width: 100%; height: 100vh; flex-direction: column; justify-content: flex-start; align-items: center;">
-  <button bindtap="gotoEchartsDemo" type="primary" style="margin-top: 15px">
-    动态加载echarts demo
-  </button>
-  <button bindtap="gotoPageA" type="primary" style="margin-top: 15px">
-    带系统头部的页面
-  </button>
-  <button bindtap="gotoPageB" type="primary" style="margin-top: 15px">
-    不带头部的页面
-  </button>
-  <button bindtap="gotoInjectComponent" type="primary" style="margin-top: 15px">
-    内嵌组件
-  </button>
-  <button bindtap="loadSdk" type="warn" style="margin-top: 30px; width: 300px;">
+<view class="home">
+  <view class="title">主包环境：</view>
+  <view bindtap="gotoEchartsDemo" class="button">
+    echarts demo
+  </view>
+  <view bindtap="loadSdk" class="button">
     点击我动态加载 sdk，并执行
-  </button>
+  </view>
+  <view class="button"></view>
+  <view class="title">web分包环境：</view>
+  <view bindtap="gotoDemo" class="button">
+    web分包 demo
+  </view>
+  <view bindtap="gotoPageA" class="button">
+    带系统头部
+  </view>
+  <view bindtap="gotoPageB" class="button">
+    不带头部
+  </view>
+  <view bindtap="gotoInjectComponent" class="button">
+    内嵌组件
+  </view>
 </view>
