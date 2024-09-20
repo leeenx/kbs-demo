@@ -11,7 +11,7 @@
                 {
                     "name": "web分包-echarts",
                     "pathName": "web-package/page/index",
-                    "query": "route=%2Fecharts-demo%2F&pageTitle=demo&pageNameSpace=1726159749803",
+                    "query": "route=https://www.leeenx.cn/dist/echarts-demo/&pageTitle=demo&pageNameSpace=1726159749803",
                     "launchMode": "default",
                     "scene": null
                 },
