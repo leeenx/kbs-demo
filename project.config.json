@@ -20,6 +20,10 @@
             {
                 "packageJsonPath": "./web-package/package.json",
                 "miniprogramNpmDistDir": "/web-package/"
+            },
+            {
+                "packageJsonPath": "./taro-web-package/package.json",
+                "miniprogramNpmDistDir": "/taro-web-package/"
             }
         ],
         "babelSetting": {

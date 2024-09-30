@@ -6,8 +6,8 @@ import { registerToGlobleScope } from "kbs-dsl-resolver";
 registerToGlobleScope({
   watch: false,
   defaultKbsRoute: '/page-b/',
-  dslBase: 'https://www.leeenx.cn/dist',
-  // dslBase: 'http://127.0.0.1:9000',
+  // dslBase: 'https://www.leeenx.cn/dist',
+  dslBase: 'http://127.0.0.1:9000',
   defaultContainer: '/web-package/page/index',
   headlessContainer: '/web-package/page-headless/index',
 });

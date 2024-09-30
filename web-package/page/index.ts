@@ -1,6 +1,5 @@
 import { KbsPage } from "kbs-sdk";
 import _ from 'lodash-es';
-import '../utils/common';
 
 KbsPage({
   data: {

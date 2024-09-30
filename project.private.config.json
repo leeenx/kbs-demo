@@ -9,9 +9,30 @@
         "miniprogram": {
             "list": [
                 {
+                    "name": "taro-web-package/pages/index/index",
+                    "pathName": "taro-web-package/pages/index/index",
+                    "query": "route=http://127.0.0.1:9000/demo/&pageTitle=taro-ui-demo",
+                    "launchMode": "default",
+                    "scene": null
+                },
+                {
                     "name": "web分包-echarts",
                     "pathName": "web-package/page/index",
-                    "query": "route=https://www.leeenx.cn/dist/echarts-demo/&pageTitle=demo&pageNameSpace=1726159749803",
+                    "query": "route=https://www.leeenx.cn/dist/echarts-demo/&pageTitle=demo",
+                    "launchMode": "default",
+                    "scene": null
+                },
+                {
+                    "name": "配置页面",
+                    "pathName": "web-package/config/index",
+                    "query": "",
+                    "launchMode": "default",
+                    "scene": null
+                },
+                {
+                    "name": "测试页面",
+                    "pathName": "web-package/page/index",
+                    "query": "route=http%3A%2F%2Fwww.leeenx.cn%2Fdist%2Ffull-screen-textarea%2F&pageTitle=全屏&pId=1727085700115",
                     "launchMode": "default",
                     "scene": null
                 },

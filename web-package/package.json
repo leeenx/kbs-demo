@@ -24,6 +24,6 @@
     "kb-smart-component": "^0.2.1",
     "kbs-dsl-loader": "^1.0.19",
     "kbs-dsl-resolver": "^2.0.7",
-    "kbs-sdk": "^1.1.5"
+    "kbs-sdk": "^1.1.7"
   }
 }

@@ -1,5 +1,4 @@
 import { KbsPage } from "kbs-sdk";
-import '../utils/common';
 
 KbsPage({
   data: {

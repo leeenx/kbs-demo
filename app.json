@@ -32,9 +32,20 @@
       "root": "web-package",
       "name": "web-package",
       "pages": [
+        "config/index",
         "page/index",
         "page-headless/index",
         "inject-component/index"
+      ],
+      "independent": true
+    },
+    {
+      "root": "taro-web-package",
+      "name": "taro-web-package",
+      "pages": [
+        "pages/config/index",
+        "pages/index/index",
+        "pages/headless/index"
       ],
       "independent": true
     }
