@@ -6,3 +6,5 @@
 /yarn-error.log
 /yarn.lock
 yarn.lock
+.DS_Store
+**/.DS_Store
