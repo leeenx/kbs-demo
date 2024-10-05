@@ -9,6 +9,20 @@
         "miniprogram": {
             "list": [
                 {
+                    "name": "本地taro-web-package",
+                    "pathName": "taro-web-package/pages/index/index",
+                    "query": "route=http://127.0.0.1:9000/demo/&pageTitle=taro-demo",
+                    "launchMode": "default",
+                    "scene": null
+                },
+                {
+                    "name": "web分包--Taro-UI",
+                    "pathName": "taro-web-package/pages/index/index",
+                    "query": "route=https%3A%2F%2Fwww.leeenx.cn%2Ftaro%2Fdemo%2F&pageTitle=taro-demo",
+                    "launchMode": "default",
+                    "scene": null
+                },
+                {
                     "name": "taro-web-package/pages/index/index",
                     "pathName": "taro-web-package/pages/index/index",
                     "query": "route=http://127.0.0.1:9000/demo/&pageTitle=taro-ui-demo",

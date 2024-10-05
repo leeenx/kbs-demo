@@ -22,6 +22,6 @@
   },
   "dependencies": {
     "kbs-dsl-loader": "^1.0.19",
-    "kbs-dsl-resolver": "^2.0.7"
+    "kbs-dsl-resolver": "^2.1.0"
   }
 }

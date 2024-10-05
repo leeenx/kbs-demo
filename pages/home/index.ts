@@ -4,6 +4,17 @@ Page({
   gotoEchartsDemo() {
     wx.navigateTo({ url: '/pages/echarts-demo/index' });
   },
+  gotoTaroDemo() {
+    navigate(
+      'https://www.leeenx.cn/taro/demo/',
+      {
+        pageTitle: 'taro-demo'
+      },
+      {
+        miniProgramPath: '/taro-web-package/pages/index/index'
+      }
+    );
+  },
   gotoDemo() {
     navigate('/echarts-demo/', { pageTitle: 'demo' });
   },
